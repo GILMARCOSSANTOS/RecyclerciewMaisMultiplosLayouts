@@ -3,40 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="2dp"
-    android:layout_marginBottom="30dp">
+    android:layout_marginBottom="30dp"
+    android:elevation="2dp">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="match_parent"
-        android:layout_height="142dp"
-        android:background="@color/purple_700"
 
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:background="@color/purple_700"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Título"
-        android:textSize="40sp"
-        android:textColor="@color/white"
-        android:layout_marginTop="24dp"
         android:layout_marginStart="24dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_marginTop="24dp"
+        android:text="Título"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/smile"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:background="#C32C2C"
         android:layout_gravity="center_vertical"
         android:layout_marginEnd="24dp"
-
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="#C32C2C"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
